@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Básico</title> <!--Nome que aparece na aba da página-->
+        <link rel="shortcut icon" href="imagens/HTML.png"> <!--Ícone na página aba da página.-->
+        <link rel="stylesheet" href="style.css"/> <!--Link para o CSS-->
+
+    </head>
+    
+    <body>
+        <div class=Cabeçalho>
+            <h1><b>HTML</b></h1>
+        </div>
+        <nav>
+            <ul class="site-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="txt/index.txt">HTML</a></li>
+                <li><a href="/suco">CSS</a></li>
+                <li><a href="/cha">JavaScript</a></li>
+                <li><a href="/cha">Scripts</a></li>
+            </ul>
+        </nav>
+        <div class="Introdução">
+            <p id="Título-Texto"><b>Introdução</b></p>
+            <p>HTML - HyperText Markup Language ou Linguagem de Marcação de HiperTexto na tradução para o português - é uma ferramenta de 
+                marcação de texto para criação de páginas web criada em 1991 por Tim Berners-Lee na Suiça e é escrita em formato de texto livre
+                e sem marcação, ou seja, não há nada além de um texto cru em sua composição. A priori com a inteção de apenas fazer ligações de
+                 documentos locais, teve um crescimento exponencial e, apenas um ano após sua criação já carregava a
+                responsabilidade de interligar o mundo tudo, 'WWW', World Wide Web.</p>
+            <p>Por mais que o HTML seja potente o bastante para ter em seu escopo o conteúdo da página e poder estilizá-la, é muito utilizado 
+                e indicado o uso de mais duas ferramentas para facilitar a criação e o escalonamento web, o CSS e o JavaScript. Portanto o 
+                HTML fica responsável  carregar o conteúdo cru da página, o CSS pela estilização e o JavaScript pela interação e lógica
+                por trás.</p>
+        </div>
+        <p>Começando o estudo das tags, a estrutura básica de praticamente todas consiste em '&lt;x&gt;' para abrir e '&lt;/x&gt;' para 
+            fechar, sendo 'x' é uma tag representativa geral, possuindo atributos globais e locais. 
+            <br>O corpo principal da página pode ser dividido em 4 contêiners básicos:</p>
+        <div class="Tags">
+            <ol style=color:#0000ff;>
+                <li><b>&lt;!DOCTYPE html&gt;</b> : Responsável por mostrar que é uma página web;</li>
+                <li><b>&lt;html&gt;</b> : Começo do corpo html;</li>
+                <li><b>&lt;head&gt;</b> : Compõe o cabeçalho da página, normalmente informações que não aparecem;</li>
+                <li><b>&lt;body&gt;</b> : Todo o corpo da página, ou seja, as informações que irão compor todo o site.</li>
+            </ol>
+            <p>OBS: De todas as tags, somente a (2) será fechada ao fim de todas as outras, ou seja, a última tag é &lt;/html&gt; </p>
+        </div>
+        <p id="Título-Texto"><b>Tags</b></p>
+        <p>Além de praticamente impossível decorar todas as tags, além de não ser necessários, pois existem diversos sites para trazer
+            uma biblioteca com todas as tags, dicas e estrutura html, tal como a página da <a href="https://www.w3c.br/">W3C</a>. Esses tipos
+            de site são de suma importância para o andamento do criador de site, então é sempre bom ter na bagagem alguns dos principais para 
+            ajudar quando for necessário.</p>
+        <p>Como dito acima, a página pode ser subdividida em 4 partes principais e, assim, encorporpar cada subdivisão com as demais tags.
+            Para título de estudo, será apresentado abaixo as tags mais usadas em cada uma dessas partes e, caso haja necessidade ou curiosidade 
+            para saber mais é indicado buscar sites (como o <a href="https://www.w3c.br/">W3C</a>) para buscar as outras tags.</p>
+        <ul>
+            <div class=DOCTYPE>
+                <li><b>&lt;!DOCTYPE html&gt;</b> é a tag responsável para indicar ao navegador qual a versão do HTML deve ser usada, 
+                    por isso é indicado sempre colocá-la na primeira linha de todo documento HTML, e, assim, não há outras tags dentro da sua 
+                    composição e nem necessidade de fechá-la.
+                </li>
+            </div>
+            <div class="html">
+                <li>
+                    <p><b>&lt;html&gt;</b> é responsável basicamente por tudo. É nela que se encontra a raiz, o motivo, do documento escrito ser
+                        um HTML, essencial para qualquer projeto de criação de páginas, sem ela, não há HTML. É dentro dessa tag que se coloca o 
+                        termo 'lang=x', onde lang representa a linguá em que o site está sendo feito e 'x' deve ser substituido pelo idioma, por 
+                        exemplo 'pt-br' para português ou 'en' para inglês.
+                    <br>Diferente das outras, essa tag necessariamente deve ser fechada ao final do 'script' todo, ou seja, é a ultima tag de todo
+                       o documento. Assim sua forma é:</p>
+                    <p class="Tags-Escritas">&lt;html lang='pt-br'&gt;</p>
+                </li>
+            </div>
+            <div class="Head">
+                <li>
+                    <p><b>&lt;head&gt;</b> é o contêiner responsável por trazer à página os dados estruturais, ou seja, nela não se encontra 
+                        nada visível, mas sim infraestruturas da página, tal como links e conecções com o CSS e o JavaScript, e o título da página.
+                        As tags possíveis no head são: 
+                        <br><i>title</i>, título que aparece na aba; style</i>, basicamente o que faz o CSS; </i>base</i>
+                        , especifica o URL base; <i>link</i>, link's que irão juntar links externos; <i>meta</i>, informações sobre os dados;
+                        <i>script</i>, instruções do script pelo <i>JavaScript</i>; noscript, define um conteúdo alternativo a ser exibido para 
+                        usuários que desabilitaram scripts em seus navegadores ou possuem um navegador que não oferece suporte a scripts. 
+                        <br>A tag será fechada assim que terminar todas as expecificações do head e for começar o body.
+                    </p>
+                </li>
+            </div>
+            <div class="Body">
+                <li>
+                <p><b>&lt;body&gt;</b> é o responsável por todo corpo da página, onde serão escritos e estruturados todos os ítens que irão 
+                    aparecer na página, basicamente tudo que é visível é escrito aqui, lembrando que o HTML, por padrão de simplicidade, contêm
+                    apenas o conteúdo da página e poucas estilizações. 
+                    <br>Falar de todas as tags que podem compor o body seria muito extenso, então será descrito os principais e mais usados aqui.
+                    <br> <i>H1,...,H6</i> definem os títulos mais importantes da página, sendo do menor para o maior número em grau de 
+                    descendência de importância; <i>p</i> conterá o parágrafo dos textos que irão ser apresentados; <i>ol/ul</i> são tags que 
+                    carregam a listagem das páginas, respectivamente listagem ordenada e listagem com 'bolinhas' antes, elas apenas abrem a lista,
+                    devem ser acompanhadas por <i>li</i>; e <i>div</i> é usado para criar caixas/contêiners dentro do body, muito usado para 
+                    escalonar eas páginas.
+                    <br>Essa tag será fechada quando todos os conteúdos da páginas já tiverem sido descritos e estruturados.</p>
+                </li>
+            </div>
+        </ul>
+        <p id="Título-Texto"><b>Conclusão</b></p>
+        <p>Já tendo em mente os conceitos básicos da criação de uma página web, fica bem mais facil de abrir uma criada e começar a estudar
+            como estruras mais complexas são feitas e começar a criar a sua própria. Para pode inspecionar um texto html de uma página já 
+            criada é facil, basta apenas clicar com o botão direito no navegador e procurar inspecionar ou usar teclas de atalho, como F12 
+            no Google Chrome.</p>
+        <p>A título de curiosidade será disponibilizado por esse <a href="txt/index.txt">link</a> um arquivo txt com a estrutura dessa página 
+        em questão. Claro que para toda a sua estrutura foram usados <a href="txt/css.txt">CSS</a> e <a href="txt/JavaScript">JavaScript</a>, mas
+        como o propósito era estudar apenas HTML, essas duas estruturas serão bem abordadas pelos links no cabeçalho do site, mesmo estando
+        disponibilizado aqui já o txt das duas estruturas</p>
+        
+    </body>
+</html>
