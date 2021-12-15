@@ -3,13 +3,13 @@
 }
     
 .container{
-    display: block;
+    display: block; 
 }
 
 .Ícone{
     border: solid blue;
     margin: 0px auto;
-    display: inline-block;
+    display: flex;
     
 }
 
